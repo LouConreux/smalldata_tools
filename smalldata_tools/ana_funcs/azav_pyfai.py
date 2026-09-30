@@ -59,7 +59,7 @@ class azav_pyfai(DetObjectFunc):
             raise ValueError("Either a poni file or ai_kwargs must be provided to initialize the azimuthal integrator.")
 
         # integration arguments
-        self.pol_factor = kwargs.pop("polarization_factor", -1)  # Vertical Polarization by default post Run 18   
+        self.pol_factor = kwargs.pop("polarization_factor", -1)  # Vertical Polarization by default post Run 18
         self.npts = kwargs.pop("npts", 256)
         self.npts_az = kwargs.pop("npts_az", 360)
         # self.radial_range = kwargs.pop('radial_range',None)
